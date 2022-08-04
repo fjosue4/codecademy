@@ -13,7 +13,7 @@ body {
 }
 
 .fontsPage {
-    width: 80%;
+    height: 94vh;
 }
 
 .header {
@@ -78,6 +78,10 @@ a, a:hover, a:focus, a:active {
 
 .fa-copy {
     margin-left: 4%;
+}
+
+.fa-dl {
+    margin-left: 2%;
 }
 
 @media (max-width: 800px) {
@@ -149,6 +153,10 @@ a, a:hover, a:focus, a:active {
     color: #FDC800;
 }
 
+.currentPage-3 {
+    color: #04D89D;
+}
+
 .color-1:hover, .color-2:hover, .color-3:hover {
     transform: scale(1.03);
     transition: transform .2s;
@@ -179,6 +187,30 @@ a, a:hover, a:focus, a:active {
   }
 
   .fonts {
-    background-color: #04D89D;
-    padding:
+    background-color: #FDC800;
+    color: #444444;
+    padding: 30px 60px;
+    border-radius: 20px;
   }
+
+  .poppins {
+    font-family: Poppins;
+  }
+
+  .fonts h1 {
+    display: inline;
+  }
+
+#styles {
+    background-color: #04D89D;
+    color: #fff;
+}
+
+h2,h3 {
+    font-weight: 400;
+}
+
+h3 {
+    font-family: Poppins;
+    font-size: 18px;
+}
