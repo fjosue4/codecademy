@@ -3,6 +3,9 @@
 
 
 body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
     background-color: #032B44;
     color: #fff;
     font-family: Catamaran, sans-serif;
@@ -11,6 +14,16 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .fontsPage {
     height: 94vh;
@@ -52,7 +65,7 @@ body {
 }
 
 .text-card {
-    background-color: #04D89D;
+    background-color: #04AA6B;
     border-radius: 20px;
     padding: 10px 30px;
 }
@@ -124,7 +137,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .color-3 {
-    background-color: #04D89D;
+    background-color: #04AA6B;
     border-radius: 20px;
     padding: 10px 30px;
 }
@@ -154,13 +167,13 @@ a, a:hover, a:focus, a:active {
 }
 
 .currentPage-3 {
-    color: #04D89D;
+    color: #04AA6B;
 }
 
 .color-1:hover, .color-2:hover, .color-3:hover {
     transform: scale(1.03);
     transition: transform .2s;
-    cursor: copy;
+    cursor: text;
 }
 
 @media (max-width: 800px) {
@@ -202,7 +215,7 @@ a, a:hover, a:focus, a:active {
   }
 
 #styles {
-    background-color: #04D89D;
+    background-color: #04AA6B;
     color: #fff;
 }
 

@@ -10,7 +10,7 @@
 <body>
     <div class="content">
         <div class="header">
-        <h1>COLORS</h1>
+        <h1>COLOR</h1>
         <div class="navBreadcrumb">
             <ul class="breadcrumb">
                 <li><a href="index.html">Home</a></li>
@@ -22,22 +22,22 @@
     </div>
 
 
-    <div class="cards">
+    <div class="cards" onclick="copyFunction()">
 
-        <div class="color-1">
+        <div class="color-1 btncopy" value="#FF4197">
             <h2>#FF4197</h2>
-             <div class="color-copy"><p>Copy this color code.  </p><i class="fa-solid fa-copy"></i></div>
+             <div class="color-copy" ><p>Select and copy this color code.  </p><i class="fa-solid fa-copy"></i></div>
         </div>
 
-        <div class="color-2">
+        <div class="color-2 btncopy" value="#FDC800">
             <h2>#FDC800</h2>
-            <div class="color-copy"><p>Copy this color code.  </p><i class="fa-solid fa-copy"></i></div>
+            <div class="color-copy"><p>Select and copy this color code.  </p><i class="fa-solid fa-copy"></i></div>
         </a></div>
 
   
-        <div class="color-3">
+        <div class="color-3 btncopy" value="#04D89D">
             <h2>#04D89D</h2>
-            <div class="color-copy"><p>Copy this color code.  </p><i class="fa-solid fa-copy"></i></div>
+            <div class="color-copy"><p>Select and copy this color code.  </p><i class="fa-solid fa-copy"></i></div>
         </a></div>
 
     </div>
@@ -45,7 +45,24 @@
 </div>
 
 </body>
-    <!-- icons js -->
+    <!-- js -->
     <script src="https://kit.fontawesome.com/f66ca2523d.js" crossorigin="anonymous"></script>
-    <!-- icons js -->
+
+    <script>
+        function myFunction() {
+        var clipboard = new ClipboardJS('.btncopy');
+
+  clipboard.on('success', function (e) {
+  console.info('Action:', e.action);
+  console.info('Text:', e.text);
+  console.info('Trigger:', e.trigger);
+});
+
+clipboard.on('error', function (e) {
+  console.log(e);
+});
+}
+        </script>
+        
+    <!-- js -->
 </html>
