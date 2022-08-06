@@ -9,6 +9,7 @@ body {
 
 html {
     scroll-padding-top: 84px;
+    scroll-behavior: smooth;
 }
 
 .fixed-nav {
