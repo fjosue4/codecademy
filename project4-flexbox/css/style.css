@@ -21,16 +21,15 @@ html {
     background-color: #191919;
     z-index: 10;
     overflow: hidden;
-}
-
-.nav-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 10px;
-    font-size: 22px;
+    width: 100%;
 }
 
+.nav-buttons {
+    margin: auto 10px;
+}
 
 .logo img {
     height: 50px !important; 
@@ -106,11 +105,13 @@ margin: 15px;
 
 #locations {
     background-image: url("../img/img-locations-background.jpg");
+    background-repeat: no-repeat;
     display: flex;
-    flex-wrap: wrap;
-    height: 500px;
+    min-height: 500px;
     max-width: 1200px;
     margin: auto;
+    position: relative;
+    padding: 20px;
 }
 
 .location-container {
@@ -131,6 +132,7 @@ margin: 15px;
 
 .location-main-title h2 {
     margin: 0px;
+    text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }
 
 .location-container h4 {
