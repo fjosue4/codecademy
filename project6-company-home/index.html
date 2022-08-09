@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,40 +10,57 @@
 
   <body>
     <div class="header">
-      <img class="logo" src="./img/logo.png" alt="Sematic Logo">
-      <div class="navbar">
-        <span>Supported by</span>
+      <div class="logo-supporter">
+        <img class="logo" src="./img/logo.png" alt="Sematic Logo">
+        <span class="supporter">Supported by</span>
         <img class="supporter" src="./img/Y_Combinator_logo.png" alt="Y">
+      </div>
+      
+      <div class="navbar">
         <nav>
-          <ul>
-            <li><a href="https://medium.com/sematic-blog" target="_blank">Blog</a></li>
-            <li class="Discord-button"><a href="https://discord.gg/4KZJ6kYVax">Join us on Discord</a></li>
-          </ul>
+          <div class="nav-links">
+            <a class="blog-button" href="https://medium.com/sematic-blog" target="_blank">Blog</a>
+            <a class="discord-button" href="https://discord.gg/4KZJ6kYVax" target="_blank">Join us on Discord</a>
+          </div>
         </nav>
       </div>
     </div>
-    
+
+    <!-- Hero start -->
     <div class="hero">
+      <div class="intro">
+        <div class="head-title">
       <h1>Prototype-to-production ML in <span>days</span> not weeks</h1>
-      <div class="code-block">
-        <p>$ pip install sematic <br>
-          $ sematic start</p>
-      </div>
-      <a href="https://docs.sematic.dev/" target="_blank" class="primary-button">Read the docs</a>
-      <a href="https://github.com/sematic-ai/sematic" target="_blank" class="secondary-button">Read the docs</a>
     </div>
-<!-- Hero start -->
-    <section>
+      <div class="center-content">
+      <div class="code-block">
+        <p>$ pip install sematic
+          <p>$ sematic start</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="https://docs.sematic.dev/" target="_blank" class="primary-button"> <i class="fa-regular fa-file-code"></i> Read the docs</a>
+        <a href="https://github.com/sematic-ai/sematic" target="_blank" class="secondary-button"><i class="fa-regular fa-star"></i>  Star on Github</a>
+      </div>
+    </div>
+    </div>
+    </div>
+
+    
+    <section class="content1">
       <div class="video-section">
-        <h2>An open-source ML/DS development framework based on <span>experience</span> at leading tech companies</h2>
+        <div class="section-title">
+          <h2>An open-source ML/DS development framework based on <span>experience</span> at leading tech companies</h2>
+        </div>
+        <div class="video-form">
         <!-- YouTube Video -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/BhYtaMcSM8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- YouTube Video -->
-        <div class="form">
+        <div class="form" id="form-v1">
           <h5>Sign-up for updates, demos, tips</h5>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email" placeholder="wile.e.coyote@acme.ai">
           <button class="sumbit">Sign up</button>
         </div>
+      </div>
       </div>
     </section>
 <!-- Hero end -->
