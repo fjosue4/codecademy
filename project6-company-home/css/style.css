@@ -583,11 +583,9 @@ footer a:hover {
   .row {
     max-width: 98%;
   }
-
   .hero {
     max-width: 98%;
   }
-
   .video-form {
     flex-direction: column;
   }
@@ -615,19 +613,15 @@ footer a:hover {
   .cta-content {
     margin-right: 0;
   }
-
   .video-section {
     margin-top: -2rem;
   }
-
   .about-img {
     display: none;
   }
-
   .video-form {
     flex-direction: column;
   }
-
   .code-block {
     margin-bottom: 3rem;
   }
@@ -639,7 +633,6 @@ footer a:hover {
   .row {
     flex-direction: column;
   }
-
   #track {
     flex-direction: column-reverse;
   }
@@ -649,12 +642,14 @@ footer a:hover {
   #form-footer {
     flex-direction: column;
   }
-
   #form-footer input {
     margin: 1rem 0 1rem 0;
   }
   .discord-button {
     display: none;
+  }
+  .youtube-video {
+    max-width: 84%;
   }
 }
 
@@ -662,13 +657,19 @@ footer a:hover {
   .navbar,.supporter {
     display: none;
   }
-
   .logo {
     width: 58%;
   }
-
   .logo-supporter {
     flex-direction: column;
   }
-
+  .form {
+    padding: 4rem 1rem;
+  }
+  .code-block-static p {
+    margin-left: 4%;
+  }
+  .row,.description {
+    max-width: 98%;
+  }
 }
