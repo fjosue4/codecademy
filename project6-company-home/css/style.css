@@ -130,6 +130,7 @@ span.supporter {
     margin: 4rem auto;
 }
 
+/* Code block animated */
 .code-block {
     background-color: #3A2F2F;
     color: #fff;
@@ -232,6 +233,8 @@ span.supporter {
           border-color: tranparent;
         }
       }
+
+/* Animation end */
 
 .center-content {
     display: flex;
@@ -339,6 +342,7 @@ h3 {
     padding: 4rem 4rem;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
+    display: block;
 }
 
 .form h5 {
@@ -572,3 +576,85 @@ footer a:hover {
 .footer-title {
   margin: 0;
 }
+
+/* Responsive */
+
+@media only screen and (min-width:721px) and (max-width: 990px) {
+  .row {
+    max-width: 98%;
+  }
+
+  .hero {
+    max-width: 98%;
+  }
+
+  .video-form {
+    flex-direction: column;
+  }
+  .form {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 0px;
+  }
+}
+
+@media only screen and (max-width: 816px) {
+  .center-content {
+    flex-direction: column;
+  }
+  .hero {
+    margin-bottom: 2rem;
+  }
+  .cta {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .cta-actions {
+    margin-left: 0;
+  }
+  .cta-content {
+    margin-right: 0;
+  }
+
+  .video-section {
+    margin-top: -2rem;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .video-form {
+    flex-direction: column;
+  }
+
+  .code-block {
+    margin-bottom: 3rem;
+  }
+  .form {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 0px;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  #track {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #form-footer {
+    flex-direction: column;
+  }
+
+  #form-footer input {
+    margin: 1rem 0 1rem 0;
+  }
+  .discord-button {
+    display: none;
+  }
+}
+
