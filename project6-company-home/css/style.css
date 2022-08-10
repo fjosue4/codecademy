@@ -254,36 +254,41 @@ span.supporter {
     text-decoration: none;
     margin-right: 0.4rem;
     display: inline-block;
-    transition: 0.3s;
 }
-
-
-.primary-button:hover {
-    background-image: linear-gradient(0deg,#e19632,#f75737 49%,#cd3282);
-    transition: 0.4s;
-}
-
 
 .secondary-button {
     background-color: #ebf0f4;
     border: 1px solid rgba(27,31,36,.15);
-    color: #24292f;
+    color: #333;
     padding: 0.8rem 1.2rem;
     border-radius: 0.4rem;
     text-decoration: none;
     margin-left: 0.4rem;
     display: inline-block;
+    transition: 0.3s;
+}
+
+.secondary-button:hover {
+  background-color: #F2E46F;
+  transition: 0.3s;
 }
 
 .tertiary-button {
     background-color: transparent;
     border: 1px solid #ebf0f4;
-    color: #ebf0f4;
+    color: #fff;
     padding: 0.8rem 1.2rem;
     border-radius: 0.4rem;
     text-decoration: none;
     margin-left: 0.4rem;
     display: inline-block;
+    transition: 0.3s;
+}
+
+.tertiary-button:hover {
+  background-color: #ebf0f4;
+  color: #333;
+  transition: 0.3s;
 }
 
 .fa-star, .fa-file-code {
@@ -332,6 +337,8 @@ h3 {
     background-color: #E2472C;
     height: 100%;
     padding: 4rem 4rem;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .form h5 {
