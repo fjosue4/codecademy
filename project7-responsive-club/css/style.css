@@ -1,16 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;700;900&display=swap');
 
+/* root */
+
 html{
     font-family: 'Be Vietnam Pro', Helvetica, sans-serif;
     font-size: 16px;
-    scroll-padding-top: 100px;
 }
 
 body {
-    background-image: url("https://arma3.com/assets/img/bg/default.jpg");
+background-color: #000;
+color: #fff;
+margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'League Spartan', Helvetica, sans-serif;
+}
+
+p {
+    font-family: 'Be Vietnam Pro', Helvetica, sans-serifM
+}
+
+h1{
+    font-size: 4rem;
+}
+
+/* header and hero */
+.header {
+    background-color: rgba(0, 0, 0, 0.4);
+    max-height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    top: 6%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 44%;
+}
+
+.hero {
+    background-image: url("../img/hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content {
+    width: 60%;
+    margin: 0 10%
+}
+
+.scroll-button-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: center;
+    left: 0;
+}
+
+.scroll-button a {
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color:#000;
+}
+
+.fa-chevron-down {
+    margin-left: 0.8rem;
+}
+
+.texts p {
+    margin-top: -2rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+/* content */
+
+#game-modes {
+    background-image: url("../img/bodybg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.game-section {
+    text-align: center;
+    margin: 3% 0;
+    font-size: 1.5rem;
+}
+
+.game-modes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5%;
+    margin-bottom: 5%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 0 2%;
+    height: auto;
+    padding: 4rem;
+}
+
+.campaign {
+    background-image: url("../img/single.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.multiplayer {
+    background-image: url("../img/multi.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mods {
+    background-image: url("../img/mods.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* footer */
