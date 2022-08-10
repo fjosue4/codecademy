@@ -352,11 +352,20 @@ h3 {
 
 .form button {
     background-color: #F2E46F;
+    border: 1px solid #F2E46F;
     color: #333;
     border: 0px;
     padding: 0.8rem;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover {
+  background-color: #cd3282;
+  color: #fff;
+  transition: 0.3s;
 }
 
 .code-block-static {
@@ -497,7 +506,11 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 2% 8%;
-  margin: 0 auto;
+  margin: 4.4rem auto 0 auto;
+}
+
+footer h2 {
+  font-size: 2rem;
 }
 
 #form-footer {
@@ -505,6 +518,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  margin-top: -2rem;
 }
 
 #form-footer input {
@@ -519,10 +533,23 @@ footer {
   margin-left: 1%;
   background-color: #E2472C;
   color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-footer a{
+#form-footer button:hover {
+  background-color: #cd3282;
+  transition: 0.3s;
+}
+
+footer a {
   color: #E2472C;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #cd3282;
+  transition: 0.3s;
 }
 
 .social-icons-footer {
@@ -533,4 +560,8 @@ footer a{
 
 .fa-discord {
   margin-right: 1rem;
+}
+
+.footer-title {
+  margin: 0;
 }
