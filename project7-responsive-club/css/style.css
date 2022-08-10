@@ -128,27 +128,66 @@ h1{
     margin: 0 2%;
     height: auto;
     padding: 4rem;
+    box-shadow: 0 0 10px #000;
 }
 
 .campaign {
-    background-image: url("../img/single.jpg");
+    background: rgba(0, 0, 0, 0.4) url("../img/single.jpg");
+    background-blend-mode: darken;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.2s;
+}
+
+.campaign:hover {
+    background: rgba(0, 0, 0, 0.8) url("../img/single.jpg");
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s;
 }
 
 .multiplayer {
-    background-image: url("../img/multi.jpg");
+    background: rgba(0, 0, 0, 0.4) url("../img/multi.jpg");
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s;
+}
+
+.multiplayer:hover {
+    background: rgba(0, 0, 0, 0.8) url("../img/multi.jpg");
+    background-blend-mode: darken;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+
 .mods {
-    background-image: url("../img/mods.jpg");
+    background: rgba(0, 0, 0, 0.4) url("../img/mods.jpg");
+    background-blend-mode: darken;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 0.2s;
+}
+
+.mods:hover {
+    background: rgba(0, 0, 0, 0.8) url("../img/mods.jpg");
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.2s;
+}
+
+.game-modes h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
 }
 
 
