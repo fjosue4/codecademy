@@ -658,3 +658,17 @@ footer a:hover {
   }
 }
 
+@media only screen and (max-width: 498px) {
+  .navbar,.supporter {
+    display: none;
+  }
+
+  .logo {
+    width: 58%;
+  }
+
+  .logo-supporter {
+    flex-direction: column;
+  }
+
+}
