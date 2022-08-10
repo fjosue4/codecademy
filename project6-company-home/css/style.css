@@ -20,6 +20,10 @@ section {
     margin: 4rem 0px;
 }
 
+body {
+  margin: 0;
+}
+
 /* Header */
 
 .header {
@@ -271,6 +275,17 @@ span.supporter {
     display: inline-block;
 }
 
+.tertiary-button {
+    background-color: transparent;
+    border: 1px solid #ebf0f4;
+    color: #ebf0f4;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    margin-left: 0.4rem;
+    display: inline-block;
+}
+
 .fa-star, .fa-file-code {
     margin-right: 4px;
 }
@@ -302,7 +317,8 @@ span.supporter {
 
 h3 {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
 }
 
 .video-form {
@@ -316,8 +332,6 @@ h3 {
     background-color: #E2472C;
     height: 100%;
     padding: 4rem 4rem;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
 }
 
 .form h5 {
@@ -353,7 +367,7 @@ h3 {
   text-align: left;
   border-radius: 0.8rem;
   padding-top: 0.8rem;
-  margin: 3rem auto;
+  margin: -1rem auto 3rem auto;
 }
 
 .code-block-static p {
@@ -386,7 +400,7 @@ h3 {
 }
 
 .features p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .description {
@@ -449,7 +463,7 @@ h3 {
 }
 
 .about-us p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 300;
 }
 
@@ -463,4 +477,60 @@ h3 {
 
 .about-img img {
   width: 33%;
+} 
+
+a {
+  color: #cd3282;
+  text-decoration: none;
+}
+
+.about-text a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  background-color: #F2E46F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 8%;
+  margin: 0 auto;
+}
+
+#form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#form-footer input {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: 0px 1%;
+}
+
+#form-footer button {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  margin-left: 1%;
+  background-color: #E2472C;
+  color: #fff;
+}
+
+footer a{
+  color: #E2472C;
+}
+
+.social-icons-footer {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3%;
+}
+
+.fa-discord {
+  margin-right: 1rem;
 }

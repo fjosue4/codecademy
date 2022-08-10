@@ -55,7 +55,7 @@
         <!-- YouTube Video -->
         <iframe width="560" height="315" src="https://www.youtube.com/embed/BhYtaMcSM8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <!-- YouTube Video -->
-        <div class="form" id="form-v1">
+        <div class="form">
           <h5>Sign-up for updates, demos, tips</h5>
           <input type="email" name="email" id="email" placeholder="wile.e.coyote@acme.ai">
           <button class="sumbit">Sign up</button>
@@ -129,8 +129,8 @@
       </div>
         <div class="cta-actions">
         <div class="cta-buttons">
-        <a href="https://docs.sematic.dev/" target="_blank" class="primary-button">Read the docs</a>
-        <a href="https://github.com/sematic-ai/sematic" target="_blank" class="secondary-button">Read the docs</a>
+        <a href="https://docs.sematic.dev/" target="_blank" class="secondary-button"> <i class="fa-regular fa-file-code"></i> Read the docs</a>
+        <a href="https://github.com/sematic-ai/sematic" target="_blank" class="tertiary-button"> <i class="fa-regular fa-star"></i> Star on Github</a>
       </div>
       <div class="form">
         <h5>Sign-up for updates, demos, tips</h5>
@@ -157,14 +157,17 @@
 
 <!-- Footer start -->
 <footer>
+  <div class="social-section">
   <h2>Get in touch</h2>
-  <div class="social-icons">
-    <a href=""><i class="fa-brands fa-discord fa-4x"></i></a>
-    <a href=""><i class="fa-brands fa-linkedin fa-4x"></i></a>
   </div>
-  <div class="form">
-    <input type="email" name="email" id="email">
-    <input type="message">
+  
+  <div class="form" id="form-footer">
+    <div class="social-icons-footer">
+    <a href=""><i class="fa-brands fa-discord fa-3x"></i></a>
+    <a href=""><i class="fa-brands fa-linkedin fa-3x"></i></a>
+  </div>
+    <input type="email" name="email" id="email" placeholder="wile.e.coyote@acme.ai">
+    <input type="message" placeholder="Your message">
     <button class="sumbit">Send</button>
   </div>
 </footer>
