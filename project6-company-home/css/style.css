@@ -300,6 +300,11 @@ span.supporter {
     color: rgba(51,51,51,.84)
 }
 
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
 .video-form {
     display: flex;
     justify-content: center;
@@ -338,4 +343,48 @@ span.supporter {
     padding: 0.8rem;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
+}
+
+.code-block-static {
+  background-color: #3A2F2F;
+  color: #fff;
+  max-width: 380px;
+  min-height: 58px;
+  text-align: left;
+  border-radius: 0.8rem;
+  padding-top: 0.8rem;
+  margin: 0 auto;
+}
+
+.code-block-static p {
+  margin-left: 10%;
+  margin-top: 12px;
+  font-size: 1rem !important;
+  font-family: 'Source Code Pro', Arial, sans-serif;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 84%;
+  margin: 0 auto;
+}
+
+.get-started h3 {
+  text-align: center;
+}
+
+.row-img img {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.row-img img {
+  max-width: 80%;
+}
+
+.features p {
+  font-size: 1.2rem;
 }
