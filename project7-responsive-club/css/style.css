@@ -5,6 +5,7 @@
 
 html{
     font-family: 'Be Vietnam Pro', Helvetica, sans-serif;
+    scroll-behavior: smooth;
     font-size: 16px;
 }
 
