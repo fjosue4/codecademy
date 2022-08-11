@@ -131,6 +131,9 @@ h1{
     box-shadow: 0 0 10px #000;
 }
 
+.card:hover {
+    cursor: pointer;
+}
 .campaign {
     background: rgba(0, 0, 0, 0.4) url("../img/single.jpg");
     background-blend-mode: darken;
@@ -221,4 +224,43 @@ h1{
 
 .footer img {
     width: 10%;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 700px) and (max-width: 1000px){
+    .logo img {
+        width: 34%;
+    }
+    .header{
+        max-height: 3rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .game-modes {
+        flex-wrap: wrap;
+    }    
+    .card {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .game-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .logo img {
+        width: 24%;
+    }
+    .header{
+        max-height: 2rem;
+    }
+
+    .footer img {
+        width: 20%;
+        margin-top: 5%;
+    }
 }
