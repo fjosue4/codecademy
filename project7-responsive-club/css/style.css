@@ -264,3 +264,9 @@ h1{
         margin-top: 5%;
     }
 }
+
+@media screen and (min-width: 1228px) and (max-width: 1410px)  {
+    .card {
+        height: 10rem;
+    }
+}
