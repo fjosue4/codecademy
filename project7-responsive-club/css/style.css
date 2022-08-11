@@ -126,15 +126,44 @@ h1{
     align-items: center;
     width: 30%;
     margin: 0 2%;
-    height: auto;
-    padding: 4rem;
+    height: 24rem;
     box-shadow: 0 0 10px #000;
     text-align: center;
+    overflow: hidden;
 }
 
 .card:hover {
     cursor: pointer;
 }
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 24rem;
+    padding: 4rem;
+    width: 100%;
+    transform: translateY(16rem);
+    transition: all 0.5s ease-in-out;
+}
+
+.card-info h3{
+    font-size: 2.4rem;
+    margin-top: -1rem;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover > .card-info h3{
+    font-size: 2rem;
+    margin-top: 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover > .card-info {
+    transform: translateY(0);
+}
+
 .campaign {
     background: rgba(0, 0, 0, 0.4) url("../img/single.jpg");
     background-blend-mode: darken;
@@ -144,14 +173,6 @@ h1{
     transition: 0.2s;
 }
 
-.campaign:hover {
-    background: rgba(0, 0, 0, 0.8) url("../img/single.jpg");
-    background-blend-mode: darken;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 0.2s;
-}
 
 .multiplayer {
     background: rgba(0, 0, 0, 0.4) url("../img/multi.jpg");
@@ -189,9 +210,11 @@ h1{
     transition: 0.2s;
 }
 
+.fa-circle-right {
+    font-size: 2.8rem;
+}
 
 .game-modes h3 {
-    font-size: 1.5rem;
     margin-bottom: 0px;
 }
 
@@ -229,6 +252,16 @@ h1{
 
 /* Responsive */
 
+@media screen and (min-width: 1228px) and (max-width: 1410px)  {
+    /* .card {
+        height: 14rem;
+    } */
+
+    .fa-circle-right {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (min-width: 700px) and (max-width: 1000px){
     .logo img {
         width: 34%;
@@ -244,7 +277,8 @@ h1{
     }    
     .card {
         margin: 2rem 1rem;
-    }
+        width: 80%;
+    } 
 }
 
 @media screen and (max-width: 700px) {
@@ -278,10 +312,4 @@ h1{
         max-height: 3rem;
     }
     
-}
-
-@media screen and (min-width: 1228px) and (max-width: 1410px)  {
-    .card {
-        height: 10rem;
-    }
 }
