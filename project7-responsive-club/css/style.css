@@ -129,6 +129,7 @@ h1{
     height: auto;
     padding: 4rem;
     box-shadow: 0 0 10px #000;
+    text-align: center;
 }
 
 .card:hover {
@@ -242,27 +243,41 @@ h1{
         flex-wrap: wrap;
     }    
     .card {
-        margin: 2rem 0;
+        margin: 2rem 1rem;
     }
 }
 
 @media screen and (max-width: 700px) {
     .game-section {
         width: 90%;
-        margin: 0 auto;
-    }
-
-    .logo img {
-        width: 24%;
-    }
-    .header{
-        max-height: 2rem;
+        margin: 2rem auto;
     }
 
     .footer img {
         width: 20%;
         margin-top: 5%;
     }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .texts p {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .logo img {
+        width: 34%;
+    }
+    .header{
+        max-height: 3rem;
+    }
+    
 }
 
 @media screen and (min-width: 1228px) and (max-width: 1410px)  {
