@@ -58,12 +58,14 @@ const findInvalidCards = arr => {
     }
   }
 
-  let cardCompaniesWithIssues = [];
 
 findInvalidCards(batch);
 //console.log('Invalid cards: ', invalidCards);;
+
+
 // Brands with issues
-//console.log(invalidCards);
+let cardCompaniesWithIssues = [];
+
 const idInvalidCardCompanies = arr => {
   let companiesForAllCards = [];
   for (let card of arr) {
