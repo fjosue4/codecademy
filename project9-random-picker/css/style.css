@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg: #ffffff;
+    --box-bg: #ffffff;
+    --text-area-bg: #f7f7f7;
+    --box-shadow: #d6d6d6;
+    --color: #202020;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-bg);
+    transition: 0.4s;
+}
+
+button{
+    cursor: pointer;
+}
+
+.dark-mode {
+    --body-bg: #082032;
+    --box-bg: #2C394B;
+    --box-shadow: #151e2b;
+    --color: #ffffff;
+    --text-area-bg: #1e2835;
+}
+
+.theme-toggler {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theme-toggler span {
+    cursor: pointer;
+}
+
+.active {
+    background-color: #344f75;
+    color: white;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.highlight{
+    animation: move 4s linear infinite;
+    background-image: linear-gradient(to right, #77f, #2662e6, #15aec2, #c025b3, #77f);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+}
+
+@keyframes move { 
+    to { 
+        background-position: 200% center; 
+    } 
+}
+
+
+/* Main container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem;
+}
+
+.title {
+    text-align: center;
+    height: 100px;
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    color: var(--color);
+}
+
+.title p {
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+/* Box */
+.box {
+    background-color: var(--box-bg);
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    color: var(--color);
+    padding: 0 0 2rem 0;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.textArea {
+    border: 0;
+    width: 80%;
+    min-height: 35vh;
+    padding: 1rem;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+    overflow-y: auto;
+    background-color: var(--text-area-bg);
+    color: var(--color);
+    font-size: 1rem;
+}
+
+.textArea::-webkit-scrollbar {
+    width: 10px;
+}
+
+.textArea::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+}
+
+.textArea::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #f313e0 0%, #3764e0 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+
+.right{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10%;
+}
+
+h2{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.amountOfWinners {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    margin: 2%;
+    justify-content: space-around;
+}
+
+.checkboxes {
+    width: 66%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkboxes label {
+    font-size: 0.9rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+.randomize {
+    border: none;
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    transition: all 0.5s ease-in;
+    width: 40%;
+    margin: 0 auto;
+    animation: move 8s linear infinite;
+    background-image: linear-gradient(to right, #77f, #2662e6, #15aec2, #c025b3, #77f);
+    background-size: 200% auto;
+}
+
+.disabled {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    transition: all 0.5s ease-in;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #2C394B;
+}
+
+.winners-list {
+    text-align: center;
+}
+
+h3 {
+    margin: 14% 0%;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 880px) {
+    .title{
+        margin-top: 3rem;
+    }
+
+    .box{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .right{
+        margin: 3rem auto;
+        width: 100%;
+    }
+
+    .randomize{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .title{
+        margin-top: 4rem;
+    }
+
+    .title h1{
+        font-size: 1.5rem;
+    }
+
+    .box{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .amountOfWinners{
+        height: auto;
+        padding: 2rem;
+    }
+
+    .checkboxes{
+        flex-direction: column;
+    }
+
+    .right{
+        padding: 1rem;
+    }
+}
+

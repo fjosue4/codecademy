@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Winner Picker</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+</head>
+<body>
+    <!-- Theme toggler -->
+    <div class="theme-toggler">
+        <span class="material-icons active">light_mode</span>
+        <span class="material-icons">dark_mode</span>
+    </div>
+
+    <!-- Main content -->
+    <div class="container">
+        <div class="title">
+            <h1>Random Winner Picker</h1>
+            <p>Place the names below, make sure to separate them using a line break.</p>
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <h2>Participants</h2>
+                <textarea id="textArea" class="textArea" placeholder="Place participants here separated with break line..." required></textarea>
+                <div class="amountOfWinners">
+                    <h5>How many winners do you want?</h5>
+                   <div class="checkboxes">
+                      <input type="radio" id="oneWinner" name="winners" value="1" checked="checked">
+                      <label for="oneWinner">One Winner</label>
+
+                      <input type="radio" id="TwoWinners" name="winners" value="2" disabled>
+                      <label for="twoWinners">Two Winners</label>
+                        
+                      <input type="radio" id="ThreeWinners" name="winners" value="3" disabled>
+                      <label for="threeWinners">Three Winners</label>
+                    </div>
+                </div>
+                <button id="randomizer-button" class="disabled" disabled>Generate winners</button>
+            </div>
+
+            <div class="right">
+                <h2 class="highlight">Winners</h2>
+                <div class="winners-list">
+                    <h3 id="textAreaOutput">Press 'Generate winners' button.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
