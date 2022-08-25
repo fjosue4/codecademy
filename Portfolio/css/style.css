@@ -198,8 +198,8 @@ a {
   flex-direction: column;
 }
 
-.featured-project {
-  width: 860px;
+.featured-project, .overlay {
+  width: 880px;
   height: 300px;
   border-radius: 1rem;
 }
@@ -219,9 +219,9 @@ a {
 }
 
 .secondary-project {
-  width: 400px;
+  width: 420px;
   height: 200px;
-  margin: 2rem;
+  margin: 2rem 1rem;
   border-radius: 1rem;
 }
 
@@ -229,6 +229,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  transition: all 0.4s ease;
 }
 
 .sematic {
@@ -241,6 +242,11 @@ a {
 
 .atexto-web {
   background-image: url("../img/atexto-web.jpg");
+}
+
+
+.sematic:hover, .atexto-landing:hover, .atexto-web:hover {
+  filter: blur(2px) brightness(40%);
 }
 
 /* animations */
