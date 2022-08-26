@@ -198,19 +198,31 @@ a {
   flex-direction: column;
 }
 
-.featured-project, .overlay {
+.featured-project {
   width: 880px;
   height: 300px;
   border-radius: 1rem;
+  position: relative;
 }
 
-.featured-project h3, nav {
-  display: none;
+ .project-texts {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  color: #fff;
+  position: relative;
+  margin: 0 auto;
+  width: 880px;
+  height: 300px;
+  visibility: hidden;
 }
-
+/*
 .secondary-project h4, nav {
-  display: none;
-}
+  visibility: hidden;
+} */
 
 .two-col-projects {
   display: flex;
@@ -225,15 +237,23 @@ a {
   border-radius: 1rem;
 }
 
-.sematic, .atexto-landing, .atexto-web {
+#sematic-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   transition: all 0.4s ease;
 }
 
-.sematic {
+#sematic-bg {
   background-image: url("../img/sematic.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .atexto-landing {
@@ -245,8 +265,8 @@ a {
 }
 
 
-.sematic:hover, .atexto-landing:hover, .atexto-web:hover {
-  filter: blur(2px) brightness(40%);
+.featured-project:hover > #sematic-bg {
+  filter: blur(4px) brightness(40%);
 }
 
 /* animations */
