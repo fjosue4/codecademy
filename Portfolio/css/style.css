@@ -151,7 +151,7 @@ h3 {
   justify-content: center;
 } 
 
-.work-filter h2 {
+main h2 {
   font-family: 'Inria Sans', Helvetica, sans-serif;
   font-size: 2.5rem;
   margin-top: -1rem;
@@ -199,7 +199,7 @@ a {
 }
 
 .featured-project {
-  width: 880px;
+  width: 870px;
   height: 300px;
   border-radius: 1rem;
   position: relative;
@@ -219,6 +219,11 @@ a {
   height: 300px;
   visibility: hidden;
 }
+
+.project-texts-secondary h3 {
+  margin-top: -1rem;
+}
+
 /*
 .secondary-project h4, nav {
   visibility: hidden;
@@ -231,6 +236,7 @@ a {
 }
 
 .secondary-project {
+  position: relative;
   width: 420px;
   height: 200px;
   margin: 2rem 1rem;
@@ -245,28 +251,92 @@ a {
   background-size: cover;
   background-position: center;
   transition: all 0.4s ease;
-}
-
-#sematic-bg {
   background-image: url("../img/sematic.jpg");
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 1rem;
 }
 
-.atexto-landing {
-  background-image: url("../img/atexto-landing.jpg");
+.project-texts-secondary {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  color: #fff;
+  position: relative;
+  margin: 0 auto;
+  width: 420px;
+  height: 200px;
+  visibility: hidden;
 }
-
-.atexto-web {
-  background-image: url("../img/atexto-web.jpg");
-}
-
 
 .featured-project:hover > #sematic-bg {
-  filter: blur(4px) brightness(40%);
+  filter: blur(4px) brightness(14%);
+}
+
+.secondary-project:hover > #atextolanding-bg {
+  filter: blur(4px) brightness(14%);
+}
+
+.secondary-project:hover > #atextoweb-bg {
+  filter: blur(4px) brightness(14%);
+}
+
+#atextolanding-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/atexto-landing.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+}
+
+.view-button {
+  margin-top: -0.8rem;
+  background-color: #fff;
+  color: #103778;
+  padding: .4rem .8rem;
+  border-radius: 1rem;
+  transition: all 0.2s;
+}
+
+.view-button:hover {
+  background-color: #103778;
+  color: #fff;
+}
+
+.box-title {
+  transition: all 0.2s;
+}
+
+#atextoweb-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/atexto-web.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
 }
 
 /* animations */
