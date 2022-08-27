@@ -34,3 +34,15 @@ atextoWebDiv.addEventListener('mouseout', () => {
     document.getElementById('atextoweb-title').style.visibility = 'hidden';
     document.getElementById('atextoweb-subtitle').style.visibility = 'hidden';
 })
+
+sematicDiv.onclick = function() {
+    document.getElementById('sematic-modal').style.display = "block";
+    document.getElementById('sematic-title').style.visibility = 'hidden';
+    document.getElementById('sematic-subtitle').style.visibility = 'hidden';
+}
+
+let closeSematic = document.getElementById('close-sematic');
+
+closeSematic.onclick = function() {
+    document.getElementById('sematic-modal').style.display = "none";
+}
