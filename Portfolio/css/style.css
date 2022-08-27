@@ -374,6 +374,7 @@ a {
 }
 
 .modal-content h3 {
+  margin-top: 0;
   font-family: 'Inria Sans', Helvetica, sans-serif;
   font-weight: 800;
 }
@@ -402,25 +403,22 @@ a {
 
 .modal-details-web .modal-description {
   text-align: left;
-  margin-left: 1rem;
-  margin-right: 4rem;
+  margin-right: 3rem;
 }
 
 .modal-details-web .modal-preview {
-  margin-right: 1rem;
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 
 .modal-details-web .modal-preview img {
-  width: 340px;
-  border-radius: .4rem;
+  width: 300px;
+  border-radius: .48rem;
 }
 
 .title-divider {
   border-bottom: 2px #fff solid;
   border-radius: 80px;
-  width: 28%;
-  margin: 0 auto;
+  width: 48%;
 }
 
 
