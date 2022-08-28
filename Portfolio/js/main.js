@@ -35,14 +35,47 @@ atextoWebDiv.addEventListener('mouseout', () => {
     document.getElementById('atextoweb-subtitle').style.visibility = 'hidden';
 })
 
+// Open Modal
+
 sematicDiv.onclick = function() {
     document.getElementById('sematic-modal').style.display = "block";
     document.getElementById('sematic-title').style.visibility = 'hidden';
     document.getElementById('sematic-subtitle').style.visibility = 'hidden';
 }
 
+// Close Modal
 let closeSematic = document.getElementById('close-sematic');
 
 closeSematic.onclick = function() {
     document.getElementById('sematic-modal').style.display = "none";
+}
+
+// Open Modal
+
+atextoLandingDiv.onclick = function() {
+    document.getElementById('atextolanding-modal').style.display = "block";
+    document.getElementById('atextolanding-title').style.visibility = 'hidden';
+    document.getElementById('atextolanding-subtitle').style.visibility = 'hidden';
+}
+
+// Close Modal
+let closeAtextolanding = document.getElementById('close-atextolanding');
+
+closeAtextolanding.onclick = function() {
+    document.getElementById('atextolanding-modal').style.display = "none";
+}
+
+// Open Modal
+
+atextoWebDiv.onclick = function() {
+    document.getElementById('atextoweb-modal').style.display = "block";
+    document.getElementById('atextoweb-title').style.visibility = 'hidden';
+    document.getElementById('atextoweb-subtitle').style.visibility = 'hidden';
+}
+
+// Close Modal
+let closeAtextoweb = document.getElementById('close-atextoweb');
+
+closeAtextoweb.onclick = function() {
+    document.getElementById('atextoweb-modal').style.display = "none";
 }
