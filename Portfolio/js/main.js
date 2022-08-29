@@ -1,5 +1,6 @@
+console.log('Hey! Do you like my work? Feel free to contact me!')
+
 const sematicDiv = document.getElementById("sematic");
-console.log(sematicDiv)
 
 sematicDiv.addEventListener('mouseover', () => {
     document.getElementById('sematic-title').style.visibility = 'visible';
@@ -70,7 +71,7 @@ closeAtextolanding.onclick = function() {
 atextoWebDiv.onclick = function() {
     document.getElementById('atextoweb-modal').style.display = "block";
     document.getElementById('atextoweb-title').style.visibility = 'hidden';
-    document.getElementById('atextoweb-subtitle').style.visibility = 'hidden';
+    document.getElementById('atextoweb1-subtitle').style.visibility = 'hidden';
 }
 
 // Close Modal

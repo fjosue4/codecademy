@@ -487,6 +487,21 @@ a {
   width: 48%;
 }
 
+/* Responsive */
+
+@media screen and (max-width: 1500px) {
+  .work-categories {
+    width: 100%;
+  }  
+
+  .featured-project {
+    width: 884px;
+  }
+  
+  .secondary-project {
+    width: 424px;
+  }
+}
 
 /* animations */
 
