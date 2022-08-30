@@ -851,7 +851,7 @@ a {
   }
 
   .modal-details-web .modal-preview img {
-    display: none;
+    width: 150px;
   }
   
   .secondary-project, .project-texts-secondary {
