@@ -4,6 +4,8 @@
 html {
     font-size: 16px;
     font-family: Heebo, Helvetica, san-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 84px;
 }
 
 body {
@@ -167,7 +169,7 @@ main h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 80%;
   margin-top: 4rem;
 }
 
@@ -707,18 +709,152 @@ a {
 
 /* Responsive */
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1650px) {
+  .project-modal {
+    padding-top: 15%;
+  }
+
+  .modal-content {
+    width: 60%;
+  }
+
+  .modal-preview {
+    margin-left: 1.5rem;
+  }
+
+  .modal-description {
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1560px) {
   .work-categories {
     width: 100%;
   }  
 
-  .featured-project {
-    width: 884px;
+  .featured-project, .project-texts {
+    width: 1000px;
   }
   
-  .secondary-project {
-    width: 424px;
+  .secondary-project, .project-texts-secondary {
+    width: 484px;
   }
+
+  .modal-content {
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 1250px) {
+  .work-categories .box {
+    width: 600px;
+    height: 200px;
+    margin: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 1080px) {
+  .featured-project, .project-texts {
+    width: 800px;
+  }
+
+  .project-modal {
+    padding-top: 20%;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+  
+  .secondary-project, .project-texts-secondary {
+    width: 384px;
+  }
+}
+
+@media screen and (max-width: 884px) {
+  .featured-project, .project-texts {
+    width: 600px;
+  }
+
+  .project-modal {
+    padding-top: 30%;
+  }
+
+  .modal-details-web {
+    padding: 2rem 1rem;
+  }
+
+  .modal-details-web .modal-description {
+    margin-right: 1rem;
+  }
+
+  .modal-details-web .modal-preview {
+    margin-left: 1rem;
+  }
+
+  .modal-details-web .modal-preview img {
+    width: 248px;
+  }
+  
+  .secondary-project, .project-texts-secondary {
+    width: 284px;
+  }
+}
+
+@media screen and (max-width: 684px) {
+  .featured-project, .project-texts {
+    width: 400px;
+    height: 150px;
+  }
+  
+  .project-modal {
+    padding-top: 48%;
+  }
+
+
+  .modal-details-web .modal-preview img {
+    display: none;
+  }
+  
+  .secondary-project, .project-texts-secondary {
+    width: 400px;
+    height: 150px;
+  }
+
+  .two-col-projects {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .work-categories .box {
+    width: 400px;
+  }
+
+  .intro {
+    flex-direction: column;
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .name {
+    text-align: center;
+  }
+
+  html {
+    font-size: 14px;
+}
 }
 
 /* animations */
