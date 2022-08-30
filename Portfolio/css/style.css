@@ -303,11 +303,14 @@ a {
   margin: 0 auto;
   width: 880px;
   height: 300px;
-  visibility: hidden;
 }
 
 .project-texts-secondary h3 {
   margin-top: -1rem;
+}
+
+.div-text-and-button {
+  visibility: hidden;
 }
 
 /*
@@ -332,7 +335,6 @@ a {
 .project-texts-secondary {
   display: flex;
   flex-direction: column;
-  visibility: visible;
   align-items: center;
   justify-content: center;
   z-index: 100;
@@ -341,7 +343,6 @@ a {
   margin: 0 auto;
   width: 420px;
   height: 200px;
-  visibility: hidden;
 }
 
 
