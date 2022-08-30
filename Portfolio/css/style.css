@@ -225,13 +225,36 @@ main h2 {
 }
 
 .work-categories .box {
-  width: 480px;
-  height: 148px;
+  width: 600px;
+  height: 200px;
   margin: 1rem;
-  border-radius: .5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.work-categories .web {
+  margin-bottom: 0;
+  margin-right: 0;
+  border-top-left-radius: .5rem;
+}
+
+.work-categories .video {
+  margin-left: 0;
+  margin-bottom: 0;
+  border-top-right-radius: .5rem;
+}
+
+.work-categories .design {
+  margin-top: 0;
+  margin-right: 0;
+  border-bottom-left-radius: .5rem;
+}
+
+.work-categories .personal {
+  margin-top: 0;
+  margin-left: 0;
+  border-bottom-right-radius: .5rem;
 }
 
 .box h3 {
@@ -264,7 +287,7 @@ a {
 .featured-project {
   width: 1200px;
   height: 300px;
-  border-radius: 1rem;
+  border-radius: .4rem;
   position: relative;
 }
 
@@ -303,7 +326,7 @@ a {
   width: 584px;
   height: 200px;
   margin: 2rem 1rem;
-  border-radius: 1rem;
+  border-radius: .8rem;
 }
 
 #sematic-bg {
@@ -320,7 +343,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 1rem;
+  border-radius: .8rem;
 }
 
 .project-texts-secondary {
@@ -364,7 +387,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 1rem;
+  border-radius: .8rem;
 }
 
 .view-button {
@@ -373,7 +396,7 @@ a {
   border: 1px #fff solid;
   color: #103778;
   padding: .4rem .8rem;
-  border-radius: 1rem;
+  border-radius: .8rem;
   transition: all 0.2s;
   white-space: nowrap;
 }
@@ -401,7 +424,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 1rem;
+  border-radius: .8rem;
 }
 
 #cala-bg {
@@ -418,7 +441,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 1rem;
+  border-radius: .8rem;
 }
 
 #explanatory-bg {
@@ -435,7 +458,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 1rem;
+  border-radius: .8rem;
 }
 
 #live-bg {
@@ -452,7 +475,109 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 1rem;
+  border-radius: .8rem;
+}
+
+#wc-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/br2.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+#yobe-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/yobe.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+#report-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/report.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+#udemy-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/udemy.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+#ucl-hl-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/ucl-hl.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+#ucl-pv-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/ucl-pv.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
 }
 
 /* Modal styles */
@@ -475,7 +600,7 @@ a {
 .modal-content {
   position: relative;
   background-color: #103778;
-  border-radius: 1rem;
+  border-radius: .8rem;
   color: #fff;
   margin: auto;
   padding: .7rem 1.5rem;
