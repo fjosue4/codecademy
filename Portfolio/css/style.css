@@ -798,6 +798,7 @@ a {
   }
 
   .modal-details-web {
+    flex-direction: column-reverse;
     padding: 2rem 1rem;
   }
 
@@ -807,6 +808,18 @@ a {
 
   .modal-details-web .modal-preview {
     margin-left: 1rem;
+  }
+
+  .modal-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .modal-details-web .modal-description {
+    margin: 0 auto;
   }
 
   .modal-details-web .modal-preview img {
@@ -824,23 +837,17 @@ a {
     height: 150px;
   }
   
+
+  .modal-preview {
+    margin-bottom: 1rem;
+  }
+
   .project-modal {
     padding-top: 48%;
   }
 
   .modal-content h3, .modal-content p {
     text-align: center;
-  }
-
-  .modal-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .modal-details-web .modal-description {
-    margin: 0 auto;
   }
 
   .modal-details-web .modal-preview img {
