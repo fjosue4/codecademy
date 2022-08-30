@@ -412,7 +412,41 @@ a {
   background-size: cover;
   background-position: center;
   transition: all 0.4s ease;
-  background-image: url("../video/cala.gif");
+  background-image: url("../img/cala.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+}
+
+#explanatory-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/atexto-exp.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+}
+
+#live-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/livestream.jpg");
   position: absolute;
   top: 0;
   left: 0;
