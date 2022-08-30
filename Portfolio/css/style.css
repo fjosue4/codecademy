@@ -821,6 +821,20 @@ a {
     padding-top: 48%;
   }
 
+  .modal-content h3, .modal-content p {
+    text-align: center;
+  }
+
+  .modal-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-details-web .modal-description {
+    margin: 0 auto;
+  }
 
   .modal-details-web .modal-preview img {
     display: none;
@@ -854,6 +868,11 @@ a {
 
   html {
     font-size: 14px;
+}
+
+.modal-content {
+    width: 80%;
+
 }
 }
 
