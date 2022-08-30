@@ -315,10 +315,9 @@ a {
   visibility: hidden;
 }
 
-/*
-.secondary-project h4, nav {
-  visibility: hidden;
-} */
+.youtube-box {
+  border-radius: 1rem;
+}
 
 .two-col-projects {
   display: flex;
