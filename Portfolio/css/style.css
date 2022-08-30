@@ -329,6 +329,22 @@ a {
   border-radius: .8rem;
 }
 
+.project-texts-secondary {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  color: #fff;
+  position: relative;
+  margin: 0 auto;
+  width: 420px;
+  height: 200px;
+  visibility: hidden;
+}
+
+
 #sematic-bg {
   display: flex;
   align-items: center;
@@ -346,30 +362,7 @@ a {
   border-radius: .8rem;
 }
 
-.project-texts-secondary {
-  display: flex;
-  flex-direction: column;
-  visibility: visible;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  color: #fff;
-  position: relative;
-  margin: 0 auto;
-  width: 420px;
-  height: 200px;
-  visibility: hidden;
-}
-
 .featured-project:hover > #sematic-bg {
-  filter: blur(4px) brightness(14%);
-}
-
-.secondary-project:hover > #atextolanding-bg {
-  filter: blur(4px) brightness(14%);
-}
-
-.secondary-project:hover > #atextoweb-bg {
   filter: blur(4px) brightness(14%);
 }
 
@@ -388,6 +381,221 @@ a {
   right: 0;
   bottom: 0;
   border-radius: .8rem;
+}
+
+.secondary-project:hover > #atextolanding-bg {
+  filter: blur(4px) brightness(14%);
+}
+
+#atextoweb-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/atexto-web.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+.secondary-project:hover > #atextoweb-bg {
+  filter: blur(4px) brightness(14%);
+}
+
+#cala-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/cala.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+.featured-project:hover > #cala-bg{
+  filter: blur(4px) brightness(14%);
+} 
+
+#explanatory-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/atexto-exp.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+.secondary-project:hover > #explanatory-bg {
+  filter: blur(4px) brightness(14%);
+}
+
+#live-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/livestream.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+.secondary-project:hover > #live-bg {
+  filter: blur(4px) brightness(14%);
+}
+
+#wc-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/br2.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+.featured-project:hover > #wc-bg{
+  filter: blur(4px) brightness(14%);
+} 
+
+
+#yobe-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/yobe.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+.secondary-project:hover > #yobe-bg {
+  filter: blur(4px) brightness(14%);
+}
+
+#report-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/report.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+.secondary-project:hover > #report-bg {
+  filter: blur(4px) brightness(14%);
+}
+
+#udemy-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/udemy.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+.featured-project:hover > #udemy-bg{
+  filter: blur(4px) brightness(14%);
+} 
+
+#ucl-hl-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/ucl-hl.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+.secondary-project:hover > #ucl-hl-bg {
+  filter: blur(4px) brightness(14%);
+}
+
+#ucl-pv-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.4s ease;
+  background-image: url("../img/ucl-pv.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: .8rem;
+}
+
+.secondary-project:hover > #ucl-pv-bg {
+  filter: blur(4px) brightness(14%);
 }
 
 .view-button {
@@ -410,176 +618,6 @@ a {
   transition: all 0.2s;
 }
 
-#atextoweb-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
-  background-image: url("../img/atexto-web.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .8rem;
-}
-
-#cala-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
-  background-image: url("../img/cala.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .8rem;
-}
-
-#explanatory-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
-  background-image: url("../img/atexto-exp.png");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .8rem;
-}
-
-#live-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
-  background-image: url("../img/livestream.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .8rem;
-}
-
-#wc-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
-  background-image: url("../img/br2.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .8rem;
-}
-
-#yobe-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
-  background-image: url("../img/yobe.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .8rem;
-}
-
-#report-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
-  background-image: url("../img/report.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .8rem;
-}
-
-#udemy-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
-  background-image: url("../img/udemy.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .8rem;
-}
-
-#ucl-hl-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
-  background-image: url("../img/ucl-hl.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .8rem;
-}
-
-#ucl-pv-bg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  transition: all 0.4s ease;
-  background-image: url("../img/ucl-pv.jpg");
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: .8rem;
-}
-
 /* Modal styles */
 .project-modal {
   display: none;
@@ -594,6 +632,7 @@ a {
   overflow: auto;
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.8); 
+  z-index: 100;
 }
 
 /* Modal Content */

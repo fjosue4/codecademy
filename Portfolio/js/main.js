@@ -36,6 +36,42 @@ atextoWebDiv.addEventListener('mouseout', () => {
     document.getElementById('atextoweb-subtitle').style.visibility = 'hidden';
 })
 
+const calaDiv = document.getElementById('cala');
+
+calaDiv.addEventListener('mouseover', () => {
+    document.getElementById('cala-title').style.visibility = 'visible';
+    document.getElementById('cala-subtitle').style.visibility = 'visible';
+})
+
+calaDiv.addEventListener('mouseout', () => {
+    document.getElementById('cala-title').style.visibility = 'hidden';
+    document.getElementById('cala-subtitle').style.visibility = 'hidden';
+})
+
+const explanatoryDiv = document.getElementById('explanatory');
+
+explanatoryDiv.addEventListener('mouseover', () => {
+    document.getElementById('explanatory-title').style.visibility = 'visible';
+    document.getElementById('explanatory-subtitle').style.visibility = 'visible';
+})
+
+explanatoryDiv.addEventListener('mouseout', () => {
+    document.getElementById('explanatory-title').style.visibility = 'hidden';
+    document.getElementById('explanatory-subtitle').style.visibility = 'hidden';
+})
+
+const liveDiv = document.getElementById('live');
+
+liveDiv.addEventListener('mouseover', () => {
+    document.getElementById('live-title').style.visibility = 'visible';
+    document.getElementById('live-subtitle').style.visibility = 'visible';
+})
+
+liveDiv.addEventListener('mouseout', () => {
+    document.getElementById('live-title').style.visibility = 'hidden';
+    document.getElementById('live-subtitle').style.visibility = 'hidden';
+})
+
 // Open Modal
 
 sematicDiv.onclick = function() {
