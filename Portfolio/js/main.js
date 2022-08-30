@@ -4,13 +4,25 @@ let projectDiv = document.getElementsByClassName("projectdiv");
 
 let divTextAndButton = document.getElementsByClassName('div-text-and-button');
 
+let projectModal = document.getElementsByClassName('project-modal');
+
+let closeModal = document.getElementsByClassName('close');
+
 for (let i = 0; i < projectDiv.length; i++) {
     projectDiv[i].addEventListener("mouseover", () => {
         divTextAndButton[i].style.visibility = 'visible';
         })
     projectDiv[i].addEventListener("mouseout", () => {
         divTextAndButton[i].style.visibility = 'hidden';
-        console.log(projectDiv[i]);
-console.log(divTextAndButton[i]);
-        })}
-        
+        })
+
+    projectDiv[i].addEventListener("click", () => {
+        projectModal[i].style.display = "block";
+        divTextAndButton[i].style.visibility = 'hidden';
+            })
+    }
+
+for (let j = 0; j < closeModal.length; j++) {
+closeModal[j].addEventListener('click', () => {
+    projectModal[j].style.display = 'none';
+} )}
